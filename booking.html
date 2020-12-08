@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>booking community sci </title>
+    <title>Booking community sci</title>
     <meta
       name="description"
-      content="booking at the the community science museum"
+      content="booking at the community science museum"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="Css/global_styles.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -31,12 +31,12 @@
       <nav>
         <ul>
           <li>
-            <a class="current" href="index.html" class="active">Home</a>
+            <a href="index.html" class="active">Home</a>
           </li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="exhibit.html"> Exhibtions</a></li>
           <li><a href="event.html">Special Events</a></li>
-          <li><a href="booking.html">Booking</a></li>
+          <li><a class="current" href="booking.html">Booking</a></li>
         </ul>
       </nav>
     </header>
@@ -49,26 +49,74 @@
       <p>There are guided tours of the museum that leave every hour.</p>
       <p>These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
       <p>If you would like to organise a guided tour for your group of 6 or more people, please book here.</p>
-    </section>
-
-    <section class="booking_payment"></section>
-
-     <section class="booking_time">
-        <h2>booking</h2>
       </section>
+      <form action="confirmation.html" get="Post">
+        <section class="booking time">
+          <h2>Booking</h2>
+          <label for="date">Date</label>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            class="form_input1"
+          />
+          <label for="time">Time</label>
+          <select name="time" id="time" class=form_input2  required>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+          </select>
 
-      <section class="payment">
-        <h2>Card Details</h2>
-      </section>
-  </section>
-
-  <section class="buttons">
-    <a href="confirmation.html"><button>Purchase</button></a>
-    <a href="index.html"><Button>Cancel</Button></a>
-  </section>
-
-
-   
+          <label for="group">Group Size</label>
+          <select name="group" id="group" class=form_input2  required>
+            <option value="6">6 pax</option>
+            <option value="7">7 pax</option>
+            <option value="8">8 pax</option>
+            <option value="9">9 pax</option>
+            <option value="10">10 pax</option>
+            <option value="11">11 pax</option>
+            <option value="12">12 pax</option>
+            <option value="13">13 pax</option>
+            <option value="14">14 pax</option>
+            <option value="15">15 pax</option>
+            <option value="16">16 pax</option>
+            <option value="17">17 pax</option>
+            <option value="18">18 pax</option>
+            <option value="19">19 pax</option>
+            <option value="20">20 pax</option>
+          </select>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form_input1">
+          <section class="payment">
+            <h2>Card Details</h2>
+            <label for="account_number">Account Number</label>
+           <input
+            type="text"
+            name="account_number"
+            id="account_number"
+            class="form_input4"
+           />
+           <label for="expiry">expiry date</label>
+           <input
+             type="date"
+             name="expiry date"
+              id="expiry_date"
+              class="form_input3"
+            />
+           <label for="CVC">CVC</label>
+           <input type="text" name="CVC" id="CVC" class="form_input3" />
+          </section>
+          <input type="submit" value="Purchase">
+          <a href="index.html">Cancel</a>   
+      </form>
+    
     </main>
     <footer>
       <section class="location">

@@ -1,0 +1,52 @@
+@import url(../Css/global_styles.css);
+
+:root {
+  --primary-color: #fdce58;
+  --secondary-color: #2aa42a;
+  --hover-color: #beb4b4;
+  --shadow: #4ababe;
+}
+
+.admission_info {
+  display: none;
+}
+
+.explore,
+.exhibtions,
+.booking,
+.special_events {
+  border: solid black 1px;
+  margin: 20px -8px;
+}
+
+.image{width: 100%;}
+a > button {
+  width: 180px;
+  height: 51px;
+  font-size: 14px;
+  background-color: var(--secondary-color);
+  border: none;
+  box-shadow: var(--shadow) 0px 3px 6px;
+  margin: 10px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button{display: flex;
+justify-content: center;
+margin: 10px;}
+
+@media (min-width: 900px) {
+  a > button {
+    font-size: 19px;
+  }
+}
