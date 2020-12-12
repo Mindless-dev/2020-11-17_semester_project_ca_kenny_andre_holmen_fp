@@ -116,7 +116,7 @@ h2,
     grid-area: admission;
     margin-left: 8px;
     margin-right: 250px;
-    min-height: 1020px;
+    min-height: 1040px;
   }
   .booking {
     grid-area: booking;
