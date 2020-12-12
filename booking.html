@@ -7,7 +7,7 @@
       content="booking at the community science museum"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Css/global_styles.css" />
+    <link rel="stylesheet" href="Css/booking_styles.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -50,18 +50,22 @@
       <p>These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
       <p>If you would like to organise a guided tour for your group of 6 or more people, please book here.</p>
       </section>
+      
       <form action="confirmation.html" get="Post">
-        <section class="booking time">
+    
+      <section class="booking_info">
+        <section class="booking_time">
           <h2>Booking</h2>
           <label for="date">Date</label>
           <input
             type="date"
             name="date"
             id="date"
-            class="form_input1"
+            class="form_input"
           />
+          <section class=time_group>
           <label for="time">Time</label>
-          <select name="time" id="time" class=form_input2  required>
+          <select name="time" id="time" class=form_input required>
             <option value="10:00">10:00</option>
             <option value="11:00">11:00</option>
             <option value="12:00">12:00</option>
@@ -75,7 +79,7 @@
           </select>
 
           <label for="group">Group Size</label>
-          <select name="group" id="group" class=form_input2  required>
+          <select name="group" id="group" class=form_input  required>
             <option value="6">6 pax</option>
             <option value="7">7 pax</option>
             <option value="8">8 pax</option>
@@ -92,8 +96,10 @@
             <option value="19">19 pax</option>
             <option value="20">20 pax</option>
           </select>
+        </section>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="form_input1">
+          <input type="email" name="email" id="email" class="form_input">
+        </section>
           <section class="payment">
             <h2>Card Details</h2>
             <label for="account_number">Account Number</label>
@@ -101,22 +107,27 @@
             type="text"
             name="account_number"
             id="account_number"
-            class="form_input4"
+            class="form_input"
            />
-           <label for="expiry">expiry date</label>
+           <section class=date_cvc>
+           <label for="expiry">Expiry date</label>
            <input
              type="date"
              name="expiry date"
               id="expiry_date"
-              class="form_input3"
+              class="form_input"
             />
            <label for="CVC">CVC</label>
-           <input type="text" name="CVC" id="CVC" class="form_input3" />
+           <input type="text" name="CVC" id="CVC" class="form_input" />
           </section>
-          <input type="submit" value="Purchase">
-          <a href="index.html">Cancel</a>   
+        </section>  
+        <section class="buttons">
+        <input type="submit" value="Purchase">
+        <a class="cancel" href="index.html">Cancel</a>
+        </section>
+        
       </form>
-    
+   
     </main>
     <footer>
       <section class="location">

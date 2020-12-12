@@ -1,0 +1,117 @@
+@import url(../Css/global_styles.css);
+
+:root {
+  --primary-color: #fdce58;
+  --secondary-color: #2aa42a;
+  --hover-color: #beb4b4;
+  --shadow: #4ababe;
+}
+
+.form_input {
+  display: flex;
+  height: 40px;
+  margin: 10px;
+  width: 261px;
+  font-size: 26px;
+  margin: 10px auto;
+}
+
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  border: none;
+  width: 273px;
+  height: 71px;
+  font-size: 20px;
+  box-shadow: var(--shadow) 0px 3px 6px;
+  margin: 20px auto;
+}
+
+input[type="submit"]:hover,
+.cancel:hover {
+  background-color: var(--hover-color);
+}
+
+.cancel {
+  display: inline-block;
+  background-color: red;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  width: 273px;
+  height: 71px;
+  text-align: center;
+  line-height: 71px;
+  box-shadow: var(--shadow) 0px 3px 6px;
+  margin: 20px auto;
+}
+
+.booking_time {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.information {
+  margin: 20px;
+  border: solid black 1px;
+  max-width: 812px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+}
+
+.booking_info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.payment {
+  margin: 20px auto;
+}
+.buttons {
+  margin: auto;
+  flex-wrap: wrap;
+}
+form {
+  border: solid black 1px;
+  max-width: 812px;
+  margin: auto;
+}
+
+p {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 900px) {
+  .information,
+  form {
+    min-width: 812px;
+  }
+  .booking_info {
+    display: flex;
+  }
+
+  .booking_time {
+    margin: 20px;
+  }
+  .cancel {
+    margin: 20px;
+  }
+}

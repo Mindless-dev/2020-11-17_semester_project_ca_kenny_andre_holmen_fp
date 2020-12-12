@@ -1,0 +1,98 @@
+@import url(../Css/global_styles.css);
+
+:root {
+  --primary-color: #fdce58;
+  --secondary-color: #2aa42a;
+  --hover-color: #beb4b4;
+  --shadow: #4ababe;
+}
+
+.images {
+  width: 100%;
+  height: 284px;
+}
+
+.cosmology,
+.evolution,
+.robots_ai,
+.ecology,
+.biology_medicine {
+  border: solid black 1px;
+  margin: 20px -5px;
+}
+h2 {
+  margin: 20px 10px;
+}
+
+@media (min-width: 900px) {
+  h2 {
+    justify-content: center;
+  }
+  .images {
+    width: 100%;
+    height: 284px;
+  }
+  .biology_medicine {
+    border: solid black 1px;
+  }
+
+  .cosmology,
+  .evolution,
+  .robots_ai,
+  .ecology {
+    margin: 20px auto 0px auto;
+    min-height: 700px;
+    justify-content: center;
+  }
+
+  .biology_medicine {
+    display: flex;
+    flex-direction: column;
+    max-width: 1640px;
+    margin: 16px auto;
+  }
+  h2 {
+    text-align: center;
+    margin: 16px;
+  }
+  .text {
+    margin: auto;
+    max-width: 600px;
+  }
+
+  .evolution {
+    margin-top: 20px;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "h1 h1"
+      "evolution cosmology"
+      "robots ecology"
+      "biology biology";
+  }
+
+  h1 {
+    grid-area: h1;
+  }
+  .biology_medicine {
+    grid-area: biology;
+  }
+  .cosmology {
+    grid-area: cosmology;
+    margin-left: 8px;
+  }
+  .evolution {
+    grid-area: evolution;
+    margin-right: 8px;
+  }
+  .ecology {
+    grid-area: ecology;
+    margin-left: 8px;
+  }
+  .robots_ai {
+    grid-area: robots;
+    margin-right: 8px;
+  }
+}

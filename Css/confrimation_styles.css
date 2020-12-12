@@ -1,0 +1,57 @@
+@import url(../Css/global_styles.css);
+
+:root {
+  --primary-color: #fdce58;
+  --secondary-color: #2aa42a;
+  --hover-color: #beb4b4;
+  --shadow: #4ababe;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  border: solid black 1px;
+  display: flex;
+  max-width: 812px;
+  min-height: 400px;
+  margin: auto;
+}
+
+p {
+  margin: 10px 0px 0px 10px;
+}
+
+.text {
+  margin: 50px 20px;
+}
+
+.back {
+  display: flex;
+  margin: 100px auto;
+  text-decoration: none;
+}
+
+a > button {
+  background-color: var(--secondary-color);
+  border: none;
+  font-size: 20px;
+  height: 76px;
+  width: 260px;
+  box-shadow: var(--shadow) 0px 3px 6px;
+}
+
+a > button:hover {
+  background-color: var(--hover-color);
+}
+
+@media (min-width: 900px) {
+  .info {
+    border: solid black 1px;
+    display: flex;
+    width: 812px;
+    margin: auto;
+  }
+}

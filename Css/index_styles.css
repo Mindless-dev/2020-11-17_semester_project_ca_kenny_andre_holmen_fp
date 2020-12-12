@@ -19,7 +19,9 @@
   margin: 20px -8px;
 }
 
-.image{width: 100%;}
+.image {
+  width: 100%;
+}
 a > button {
   width: 180px;
   height: 51px;
@@ -30,23 +32,114 @@ a > button {
   margin: 10px;
 }
 
+a > button:hover {
+  background-color: var(--hover-color);
+}
+
 h3 {
   display: flex;
   justify-content: center;
 }
 
-p {
-  margin: 0;
+.button {
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
-.button{display: flex;
-justify-content: center;
-margin: 10px;}
+p {
+  margin: 0px;
+} /* unsure why this is nessasary on */
+
+h2,
+.text {
+  margin: 10px;
+}
 
 @media (min-width: 900px) {
+  .button {
+    margin: auto 10px 10px 10px;
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
   a > button {
     font-size: 19px;
+  }
+
+  .image {
+    max-width: 606px;
+    max-height: 240px;
+  }
+
+  .admission_info {
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    margin: 20px;
+  }
+
+  h3 {
+    color: var(--secondary-color);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .explore,
+  .exhibtions,
+  .special_events,
+  .booking {
+    max-width: 606px;
+    max-height: 480px;
+    margin: 20px 8px 8px auto;
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "h1 h1 h1 "
+      "explore exhibit admission"
+      "booking event admission";
+  }
+
+  .explore {
+    grid-area: explore;
+    margin-right: 8px;
+  }
+  .admission_info {
+    grid-area: admission;
+    margin-left: 8px;
+    margin-right: 250px;
+    min-height: 1020px;
+  }
+  .booking {
+    grid-area: booking;
+  }
+  .special_events {
+    grid-area: event;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .exhibtions {
+    grid-area: exhibit;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  h1 {
+    grid-area: h1;
+  }
+
+  p {
+    justify-content: center;
+  }
+
+  .exhibtions > .text {
+    margin-bottom: 19px;
   }
 }
