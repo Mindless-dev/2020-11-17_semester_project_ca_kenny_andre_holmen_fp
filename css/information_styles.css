@@ -1,0 +1,127 @@
+@import url(../css/global_styles.css);
+
+:root {
+  --primary-color: #fdce58;
+  --secondary-color: #2aa42a;
+  --hover-color: #beb4b4;
+  --shadow: #4ababe;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.children,
+.teachers,
+.researchers,
+.support {
+  border: solid lightgray 1px;
+  margin: 20px 5px;
+  max-width: 812px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admission_info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: solid lightgray 1px;
+}
+
+h2 {
+  display: flex;
+  margin: 10px auto;
+}
+.info_text {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.backgroundImg1 {
+  background-image: url(../images/content/abstract.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+
+h3,
+.text {
+  margin: 10px;
+}
+
+.text {
+  max-width: 600px;
+  margin: 5px auto;
+}
+
+h3 {
+  color: var(--secondary-color);
+}
+
+@media (min-width: 800px) {
+  .admission_info,
+  .children,
+  .teachers,
+  .researchers,
+  .support {
+    margin: 20px auto 20px auto;
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "h1 h1 "
+      "admission admission"
+      " children teachers"
+      "researchers support";
+  }
+  .admission_info > h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .admission > h3,
+  .hours_accessibility > h3,
+  .food_shop > h3 {
+    margin-top: 20px;
+  }
+
+  .admission_info {
+    grid-area: admission;
+    max-width: 1640px;
+  }
+  .info_text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 10px;
+  }
+  .children {
+    grid-area: children;
+    margin-right: 8px;
+  }
+  .teachers {
+    grid-area: teachers;
+    margin-left: 8px;
+  }
+  .researchers {
+    grid-area: researchers;
+    margin-right: 8px;
+  }
+  .support {
+    grid-area: support;
+    margin-left: 8px;
+  }
+  h1 {
+    grid-area: h1;
+  }
+
+  h2 > .info_text {
+    margin: auto 10px auto 10px;
+  }
+}

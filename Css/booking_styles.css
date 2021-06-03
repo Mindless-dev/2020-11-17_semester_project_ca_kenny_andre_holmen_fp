@@ -1,4 +1,4 @@
-@import url(../Css/global_styles.css);
+@import url(../css/global_styles.css);
 
 :root {
   --primary-color: #fdce58;
@@ -53,8 +53,7 @@ input[type="submit"]:hover,
 }
 
 .information {
-  margin: 20px;
-  border: solid black 1px;
+  border: solid lightgray 1px;
   max-width: 812px;
   display: flex;
   flex-direction: column;
@@ -67,6 +66,7 @@ h2 {
 }
 .buttons {
   display: flex;
+  flex-wrap: wrap;
 }
 
 label {
@@ -81,22 +81,27 @@ label {
 }
 
 .payment {
-  margin: 20px auto;
+  margin: 0px auto;
 }
 .buttons {
   margin: auto;
   flex-wrap: wrap;
 }
 form {
-  border: solid black 1px;
+  border: solid lightgray 1px;
   max-width: 812px;
   margin: auto;
 }
 
 p {
-  margin: 10px;
+  margin: 0px 0px 10px 10px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.text {
+  max-width: 600px;
+  margin: 14px auto;
 }
 
 @media (min-width: 900px) {
@@ -106,11 +111,9 @@ p {
   }
   .booking_info {
     display: flex;
+    margin: auto;
   }
 
-  .booking_time {
-    margin: 20px;
-  }
   .cancel {
     margin: 20px;
   }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>community science museum</title>
+    <title>community science | Home</title>
     <meta
       name="description"
-      content=" home page of comminty science museum, goup bookings, information, exhibits"
+      content=" homepage of comminty science museum, goup bookings, information, exhibits"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Css/index_styles.css" />
+    <link rel="stylesheet" href="css/index_styles.css" />
 
     <script
       defer
@@ -24,17 +24,15 @@
           alt="community science muesum logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+
+      <button class="hamburgerMenu" id="hamburgerMenu">
+        <i class="fas fa-bars"></i>
+      </button>
 
       <nav>
         <ul>
-          <li>
-            <a class="current" href="index.html" class="active">Home</a>
-          </li>
-          <li><a href="explore.html">Explore</a></li>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="information.html">Information</a></li>
           <li><a href="exhibit.html"> Exhibtions</a></li>
           <li><a href="event.html">Special Events</a></li>
           <li><a href="booking.html">Booking</a></li>
@@ -44,101 +42,75 @@
 
     <main>
       <h1>Community Science Museum</h1>
-      <section class="admission_info">
-        <h2>Admission</h2>
-        <section class="text">
-          <p>Come join us at the community</p>
-          <p>Science Museum where we're</p>
-          <p>commited to making science</p>
-          <p>Accessible to all.</p>
-          <h3>Visit</h3>
-          <p>Location</p>
-          <p>The museum is located at Road 177</p>
-          <p>3456 City</p>
-          <h3>Admission</h3>
-          <p>The entrence is free for all</p>
-          <p>There are guided tours of the museum</p>
-          <p>that leave every hour. These tours are</p>
-          <p>70 nok per peson and include a</p>
-          <p>handy printed guide of the museum.</p>
-          <p>If you would like to organise a guided</p>
-          <p>tour for your group of 6 or more people</p>
-          <p>choose booking on the main page</p>
-          <h3>Hours</h3>
-          <p>Monday: closed</p>
-          <p>Tuesday: 10:00-16:00</p>
-          <p>Wendesday: 10:00-16:00</p>
-          <p>Thursday: 10:00-16:00</p>
-          <p>Friday: 10:00-19:00</p>
-          <p>Saturday: 9:00-16:00</p>
-          <p>Sunday: 9:00-14:00</p>
-        </section>
-      </section>
-
       <section class="explore">
         <img
           class="image"
-          src="images/content/index moon.jpg"
+          src="images/content/galaxyresize.jpg"
           alt=" picture of the moon cycle"
         />
         <h2>Explore</h2>
         <section class="text">
-          <p>Come join us at the community</p>
-          <p>Science Museum where we're</p>
-          <p>commited to making science</p>
-          <p>accessible to all.</p>
+          <p>
+            Come join us at the community Science Museum where we're commited to
+            making science accessible to all.
+          </p>
         </section>
         <section class="button">
-          <a href="explore.html"><button>More Information</button></a>
+          <a href="information.html" class="linkButton">More Information</a>
         </section>
       </section>
 
       <section class="exhibtions">
         <img
           class="image"
-          src="images/content/index mammoth.jpg"
+          src="images/content/mammoth.jpg"
           alt=" picture of a mammoth fossile"
         />
         <h2>Exhibtions</h2>
         <section class="text">
-          <p>There are Many diffrent exhibitions</p>
-          <p>to learn more about our main exhibits</p>
-          <p>click the button.</p>
+          <p>
+            There are Many diffrent exhibitions to learn more about our main
+            exhibits click the button.
+          </p>
         </section>
         <section class="button">
-          <a href="exhibit.html"><button>Exhibitions</button></a>
+          <a href="exhibit.html" class="linkButton">Exhibitions</a>
         </section>
       </section>
 
       <section class="booking">
         <img
           class="image"
-          src="images/content/index exhibition.jpg"
+          src="images/content/exhibitionResize.jpg"
           alt=" picture of inside the museum "
         />
         <h2>Booking</h2>
         <section class="text">
-          <p>Get a guided tour of our exhibitions</p>
-          <p>for guided tours for groups of more than 6 people.</p>
+          <p>
+            Get a guided tour of our exhibitions for guided tours for groups of
+            more than 6 people.
+          </p>
         </section>
         <section class="button">
-          <a href="booking.html"><button>Booking</button></a>
+          <a href="booking.html" class="linkButton">Booking</a>
         </section>
       </section>
 
       <section class="special_events">
         <img
           class="image"
-          src="images/content/index vr.jpg"
+          src="images/content/specialEventResize.jpg"
           alt=" picture of boy using vr headset from a special event in the museum "
         />
         <h2>Special Events</h2>
         <section class="text">
-          <p>there are many diffrent events like</p>
-          <p>night in the museum and much more.</p>
+          <p>
+            there are many diffrent events like night in the museum and much
+            more.
+          </p>
         </section>
         <section class="button">
-          <a href="event.html"><button>Event Details</button></a>
+          <a href="event.html" class="linkButton">Event Details</a>
         </section>
       </section>
     </main>
@@ -162,11 +134,13 @@
         <h4>Contact Us</h4>
         <p>Communitysci@yahoo.com</p>
         <p>+4712345678</p>
-
-        <i class="social_icon fab fa-facebook-f"></i>
-        <i class="social_icon fab fa-instagram"></i>
-        <i class="social_icon fab fa-snapchat"></i>
+        <section class="social_footer">
+          <i class="social_icon fab fa-facebook-f"></i>
+          <i class="social_icon fab fa-instagram"></i>
+          <i class="social_icon fab fa-snapchat"></i>
+        </section>
       </section>
     </footer>
   </body>
+  <script src="js/global.js"></script>
 </html>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>exhibitions community sci</title>
+    <title>community science | Exhibits</title>
     <meta
       name="description"
       content="information about the community science museum exhibitions"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Css/exhibit_styles.css" />
+    <link rel="stylesheet" href="css/exhibit_styles.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -23,17 +23,15 @@
           alt="community science muesum logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+
+      <button class="hamburgerMenu" id="hamburgerMenu">
+        <i class="fas fa-bars"></i>
+      </button>
 
       <nav>
         <ul>
-          <li>
-            <a href="index.html" class="active">Home</a>
-          </li>
-          <li><a href="explore.html">Explore</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="information.html">Information</a></li>
           <li><a class="current" href="exhibit.html"> Exhibtions</a></li>
           <li><a href="event.html">Special Events</a></li>
           <li><a href="booking.html">Booking</a></li>
@@ -46,7 +44,7 @@
       <section Class="cosmology">
         <img
           class="images"
-          src="images/content/cosmology exhibitions.jpg"
+          src="images/content/cosomologyExhibition.jpg"
           alt="Austronaut doll sitting down"
         />
         <h2>Cosmology</h2>
@@ -82,7 +80,7 @@
       <section class="evolution">
         <img
           class="images"
-          src="images/content/evolution exhibitions.jpg"
+          src="images/content/evolution.jpg"
           alt="skeletons showing diffrent stages of evolution"
         />
         <h2>Evolution</h2>
@@ -116,7 +114,7 @@
       <section class="robots_ai">
         <img
           class="images"
-          src="images/content/robot exhibitions.jpg"
+          src="images/content/robotics.jpg"
           alt="robot from the science museums robot and ai exhibit"
         />
         <h2>Robotics and AI</h2>
@@ -140,7 +138,7 @@
       <section class="ecology">
         <img
           class="images"
-          src="images/content/ecology exhibitions.jpg"
+          src="images/content/ecologyExhibit.jpg"
           alt="lightning on a purple sky"
         />
         <h2>Ecology</h2>
@@ -162,7 +160,7 @@
       <section class="biology_medicine">
         <img
           class="images"
-          src="images/content/biology exhibitions.jpg"
+          src="images/content/biologyandMedicine.jpg"
           alt=" drawing of various medical vails in a straight line"
         />
         <h2>Biology and Medicine</h2>
@@ -224,10 +222,13 @@
         <h4>Contact Us</h4>
         <p>communitysci@yahoo.com</p>
         <p>+4712345678</p>
-        <i class="social_icon fab fa-facebook-f"></i>
-        <i class="social_icon fab fa-instagram"></i>
-        <i class="social_icon fab fa-snapchat"></i>
+        <section class="social_footer">
+          <i class="social_icon fab fa-facebook-f"></i>
+          <i class="social_icon fab fa-instagram"></i>
+          <i class="social_icon fab fa-snapchat"></i>
+        </section>
       </section>
     </footer>
   </body>
+  <script src="js/global.js"></script>
 </html>

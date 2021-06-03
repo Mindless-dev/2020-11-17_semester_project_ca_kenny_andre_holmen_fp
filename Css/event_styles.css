@@ -1,4 +1,4 @@
-@import url(../Css/global_styles.css);
+@import url(../css/global_styles.css);
 
 :root {
   --primary-color: #fdce58;
@@ -10,9 +10,8 @@
 .event {
   display: flex;
   flex-direction: column;
-  border: solid black 1px;
+  border: solid lightgray 1px;
   margin: 30px auto;
-
   max-width: 1088px;
   min-height: 227px;
 }

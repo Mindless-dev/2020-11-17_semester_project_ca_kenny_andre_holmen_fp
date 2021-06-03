@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Booking Confirmation community sci</title>
+    <title>community science | Booking confirmed</title>
     <meta
       name="description"
       content="confirmation of booking at the community science museum"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Css/confrimation_styles.css" />
+    <link rel="stylesheet" href="css/confrimation_styles.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -23,17 +23,15 @@
           alt="community science muesum logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+
+      <button class="hamburgerMenu" id="hamburgerMenu">
+        <i class="fas fa-bars"></i>
+      </button>
 
       <nav>
         <ul>
-          <li>
-            <a href="index.html" class="active">Home</a>
-          </li>
-          <li><a href="explore.html">Explore</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="information.html">Information</a></li>
           <li><a href="exhibit.html"> Exhibtions</a></li>
           <li><a href="event.html">Special Events</a></li>
           <li><a class="current" href="booking.html">Booking</a></li>
@@ -72,10 +70,13 @@
         <h4>Contact Us</h4>
         <p>communitysci@yahoo.com</p>
         <p>+4712345678</p>
-        <i class="social_icon fab fa-facebook-f"></i>
-        <i class="social_icon fab fa-instagram"></i>
-        <i class="social_icon fab fa-snapchat"></i>
+        <section class="social_footer">
+          <i class="social_icon fab fa-facebook-f"></i>
+          <i class="social_icon fab fa-instagram"></i>
+          <i class="social_icon fab fa-snapchat"></i>
+        </section>
       </section>
     </footer>
   </body>
+  <script src="js/global.js"></script>
 </html>

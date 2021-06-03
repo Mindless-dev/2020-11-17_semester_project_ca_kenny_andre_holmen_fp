@@ -17,8 +17,7 @@ footer {
   margin: -0.5em;
 }
 
-nav,
-#hamburger-menu {
+nav {
   display: none;
 }
 
@@ -27,16 +26,6 @@ nav,
   width: 96px;
   height: 88px;
   margin: 10px;
-}
-
-.hamburger-label {
-  float: right;
-  font-size: 3em;
-  margin: 10px 20px;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
 }
 
 nav li {
@@ -67,6 +56,18 @@ nav a {
 nav {
   background-color: white;
 }
+.hamburgerMenu {
+  margin-top: 25px;
+  font-size: 3em;
+  border: none;
+  background-color: var(--primary-color);
+  float: right;
+}
+.mobileNav {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
 
 .current {
   border: solid 3px;
@@ -90,13 +91,11 @@ p {
 
 footer {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.location,
-.hours,
-.contact {
-  text-align: center;
-}
 .social_icons {
   display: flex;
   justify-content: center;
@@ -111,8 +110,41 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+.hours > h4,
+.location > h4,
+.contact > h4 {
+  margin: 10px;
+  text-align: center;
+}
+.social_footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.hours > p,
+.location > p,
+.contact > p {
+  display: block;
+  text-align: center;
+}
+.error {
+  color: black;
+  display: none;
+  margin: auto auto 10px auto;
+  font-size: 1.2em;
+  max-width: 220px;
+  padding: 0.5em;
+  border: solid 2px rgb(224, 20, 20);
+}
 
 @media (min-width: 900px) {
+  .mobileNav {
+    position: static;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
   .logo {
     margin: 10px;
     width: 149px;
