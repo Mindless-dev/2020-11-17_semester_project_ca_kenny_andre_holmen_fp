@@ -32,7 +32,6 @@ function validationForm(event) {
     sucessCounter++;
   } else {
     cardNoError.style.display = "flex";
-    console.log(cardNo.value.length);
   }
 
   if (cardExpiry.value === "") {
